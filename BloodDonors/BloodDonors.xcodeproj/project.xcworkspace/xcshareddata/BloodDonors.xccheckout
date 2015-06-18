@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4E9B98E5-41A7-4336-9A6F-D21C072764E9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BloodDonors</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>10E2C7E05CA720E3791E10FACEDF7CBA4C9F0883</key>
+		<string>https://github.com/07cs07/BloodDonor-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BloodDonors/BloodDonors.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>10E2C7E05CA720E3791E10FACEDF7CBA4C9F0883</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/07cs07/BloodDonor-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>10E2C7E05CA720E3791E10FACEDF7CBA4C9F0883</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>10E2C7E05CA720E3791E10FACEDF7CBA4C9F0883</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BloodDonor-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

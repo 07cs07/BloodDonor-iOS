@@ -9,9 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var pinCodeText: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Blood Donors"
+        var bottomLayer = CALayer()
+        bottomLayer.borderWidth = 1
+        bottomLayer.borderColor = UIColor.redColor().CGColor
+        bottomLayer.frame = CGRectMake(0, pinCodeText.bounds.size.height - 1, self.view.bounds.size.width - 30, 1)
+        pinCodeText.layer.addSublayer(bottomLayer)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
