@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180BECF31B3A7E54004A75A9 /* SSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BECF11B3A7E54004A75A9 /* SSRadioButton.swift */; };
+		180BECF41B3A7E54004A75A9 /* SSRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BECF21B3A7E54004A75A9 /* SSRadioButtonsController.swift */; };
 		18165B4F1B2EC5180042C4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18165B4E1B2EC5180042C4A6 /* AppDelegate.swift */; };
 		18165B511B2EC5180042C4A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18165B501B2EC5180042C4A6 /* ViewController.swift */; };
 		18165B541B2EC5180042C4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18165B521B2EC5180042C4A6 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180BECF11B3A7E54004A75A9 /* SSRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButton.swift; sourceTree = "<group>"; };
+		180BECF21B3A7E54004A75A9 /* SSRadioButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButtonsController.swift; sourceTree = "<group>"; };
 		18165B491B2EC5180042C4A6 /* BloodDonors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodDonors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18165B4D1B2EC5180042C4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18165B4E1B2EC5180042C4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180BECF01B3A7E54004A75A9 /* SSRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				180BECF11B3A7E54004A75A9 /* SSRadioButton.swift */,
+				180BECF21B3A7E54004A75A9 /* SSRadioButtonsController.swift */,
+			);
+			path = SSRadioButton;
+			sourceTree = "<group>";
+		};
 		18165B401B2EC5180042C4A6 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +92,7 @@
 		18165B4B1B2EC5180042C4A6 /* BloodDonors */ = {
 			isa = PBXGroup;
 			children = (
+				180BECF01B3A7E54004A75A9 /* SSRadioButton */,
 				18165B4E1B2EC5180042C4A6 /* AppDelegate.swift */,
 				18165B501B2EC5180042C4A6 /* ViewController.swift */,
 				188DFFD21B3005FB0019861D /* CommonViewController.swift */,
@@ -216,8 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				188DFFD31B3005FB0019861D /* CommonViewController.swift in Sources */,
+				180BECF41B3A7E54004A75A9 /* SSRadioButtonsController.swift in Sources */,
 				18165B511B2EC5180042C4A6 /* ViewController.swift in Sources */,
 				18165B4F1B2EC5180042C4A6 /* AppDelegate.swift in Sources */,
+				180BECF31B3A7E54004A75A9 /* SSRadioButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
