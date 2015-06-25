@@ -15,6 +15,7 @@
 		18165B561B2EC5180042C4A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18165B551B2EC5180042C4A6 /* Images.xcassets */; };
 		18165B591B2EC5180042C4A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18165B571B2EC5180042C4A6 /* LaunchScreen.xib */; };
 		18165B651B2EC5180042C4A6 /* BloodDonorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18165B641B2EC5180042C4A6 /* BloodDonorsTests.swift */; };
+		187D46991B3BCE7900F3EBC8 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D46981B3BCE7900F3EBC8 /* HMSegmentedControl.m */; };
 		188DFFD31B3005FB0019861D /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188DFFD21B3005FB0019861D /* CommonViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,9 @@
 		18165B5E1B2EC5180042C4A6 /* BloodDonorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodDonorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18165B631B2EC5180042C4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18165B641B2EC5180042C4A6 /* BloodDonorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodDonorsTests.swift; sourceTree = "<group>"; };
+		187D46961B3BCE7900F3EBC8 /* BloodDonors-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodDonors-Bridging-Header.h"; sourceTree = "<group>"; };
+		187D46971B3BCE7900F3EBC8 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		187D46981B3BCE7900F3EBC8 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		188DFFD21B3005FB0019861D /* CommonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,7 @@
 		18165B4B1B2EC5180042C4A6 /* BloodDonors */ = {
 			isa = PBXGroup;
 			children = (
+				187D46951B3BCE2600F3EBC8 /* HMSegmentedControl */,
 				180BECF01B3A7E54004A75A9 /* SSRadioButton */,
 				18165B4E1B2EC5180042C4A6 /* AppDelegate.swift */,
 				18165B501B2EC5180042C4A6 /* ViewController.swift */,
@@ -127,6 +132,16 @@
 				18165B631B2EC5180042C4A6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		187D46951B3BCE2600F3EBC8 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				187D46971B3BCE7900F3EBC8 /* HMSegmentedControl.h */,
+				187D46981B3BCE7900F3EBC8 /* HMSegmentedControl.m */,
+				187D46961B3BCE7900F3EBC8 /* BloodDonors-Bridging-Header.h */,
+			);
+			path = HMSegmentedControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +247,7 @@
 				188DFFD31B3005FB0019861D /* CommonViewController.swift in Sources */,
 				180BECF41B3A7E54004A75A9 /* SSRadioButtonsController.swift in Sources */,
 				18165B511B2EC5180042C4A6 /* ViewController.swift in Sources */,
+				187D46991B3BCE7900F3EBC8 /* HMSegmentedControl.m in Sources */,
 				18165B4F1B2EC5180042C4A6 /* AppDelegate.swift in Sources */,
 				180BECF31B3A7E54004A75A9 /* SSRadioButton.swift in Sources */,
 			);
@@ -361,10 +377,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BloodDonors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BloodDonors/HMSegmentedControl/BloodDonors-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -373,10 +392,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BloodDonors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BloodDonors/HMSegmentedControl/BloodDonors-Bridging-Header.h";
 			};
 			name = Release;
 		};
