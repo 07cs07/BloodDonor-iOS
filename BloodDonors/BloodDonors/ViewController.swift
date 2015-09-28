@@ -20,7 +20,7 @@ extension UIButton {
     }
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var pinCodeText: UITextField!
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var bloodGroupButton: [UIButton]!
@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         var bottomLayer = CALayer()
         bottomLayer.borderWidth = 1
         bottomLayer.borderColor = UIColor.redColor().CGColor
-//        searchButton.layer.cornerRadius = 10.0
         bottomLayer.frame = CGRectMake(0, pinCodeText.bounds.size.height - 1, self.view.bounds.size.width - 30, 1)
         pinCodeText.layer.addSublayer(bottomLayer)
         radioButtonGroup.setButtonsArray(bloodGroupButton)
@@ -64,8 +63,27 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        return true
+    }
+    
     @IBAction func searchButtonAction(sender: HMSegmentedControl) {
-        
+        var control = radioButtonGroup.selectedButton()
+        if pinCodeText.text != ""{
+            if let bloodSelected = control {
+                self.performSegueWithIdentifier("DonorListSegue", sender: self)
+            } else {
+                var alertView = UIAlertController(title: "Alert", message: "Select blood group", preferredStyle: UIAlertControllerStyle.Alert)
+                alertView.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+                self .presentViewController(alertView, animated: true, completion: nil)
+                
+            }
+        } else {
+            var alertView = UIAlertController(title: "Alert", message: "Enter STD / PIN code", preferredStyle: UIAlertControllerStyle.Alert)
+            alertView.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+            self .presentViewController(alertView, animated: true, completion: nil)
+        }
     }
     func UIColorFromHex(rgbValue:UInt32)->UIColor{
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
@@ -94,7 +112,5 @@ class ViewController: UIViewController {
         segmentedControl.layer.shadowOffset = CGSizeMake(0, 1)
         segmentedControl.layer.shadowOpacity = 0.25
     }
-
-
 }
 

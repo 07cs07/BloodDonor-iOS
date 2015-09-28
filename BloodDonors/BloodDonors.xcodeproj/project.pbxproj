@@ -17,6 +17,8 @@
 		18165B651B2EC5180042C4A6 /* BloodDonorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18165B641B2EC5180042C4A6 /* BloodDonorsTests.swift */; };
 		187D46991B3BCE7900F3EBC8 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D46981B3BCE7900F3EBC8 /* HMSegmentedControl.m */; };
 		188DFFD31B3005FB0019861D /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188DFFD21B3005FB0019861D /* CommonViewController.swift */; };
+		18AA65641B4298440068D09C /* DonorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA65631B4298440068D09C /* DonorListViewController.swift */; };
+		18F59A7D1B3D3F13003EAC86 /* DonorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F59A7B1B3D3F13003EAC86 /* DonorsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		187D46971B3BCE7900F3EBC8 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
 		187D46981B3BCE7900F3EBC8 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		188DFFD21B3005FB0019861D /* CommonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		18AA65631B4298440068D09C /* DonorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonorListViewController.swift; sourceTree = "<group>"; };
+		18F59A7B1B3D3F13003EAC86 /* DonorsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DonorsTableViewCell.swift; path = ../DonorsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 				180BECF01B3A7E54004A75A9 /* SSRadioButton */,
 				18165B4E1B2EC5180042C4A6 /* AppDelegate.swift */,
 				18165B501B2EC5180042C4A6 /* ViewController.swift */,
+				18AA65631B4298440068D09C /* DonorListViewController.swift */,
 				188DFFD21B3005FB0019861D /* CommonViewController.swift */,
+				18F59A7B1B3D3F13003EAC86 /* DonorsTableViewCell.swift */,
 				18165B521B2EC5180042C4A6 /* Main.storyboard */,
 				18165B551B2EC5180042C4A6 /* Images.xcassets */,
 				18165B571B2EC5180042C4A6 /* LaunchScreen.xib */,
@@ -244,10 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F59A7D1B3D3F13003EAC86 /* DonorsTableViewCell.swift in Sources */,
 				188DFFD31B3005FB0019861D /* CommonViewController.swift in Sources */,
 				180BECF41B3A7E54004A75A9 /* SSRadioButtonsController.swift in Sources */,
 				18165B511B2EC5180042C4A6 /* ViewController.swift in Sources */,
 				187D46991B3BCE7900F3EBC8 /* HMSegmentedControl.m in Sources */,
+				18AA65641B4298440068D09C /* DonorListViewController.swift in Sources */,
 				18165B4F1B2EC5180042C4A6 /* AppDelegate.swift in Sources */,
 				180BECF31B3A7E54004A75A9 /* SSRadioButton.swift in Sources */,
 			);
